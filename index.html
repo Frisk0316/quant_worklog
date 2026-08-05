@@ -86,8 +86,9 @@ const number = value => typeof value === 'number' ? value.toLocaleString(undefin
 const escapeHtml = value => text(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const fmtMin = minutes => { const m = Math.round(minutes || 0); return m >= 60 ? `${Math.floor(m/60)} 時 ${m%60} 分` : `${m} 分`; };
 const hhmm = iso => new Date(iso).toTimeString().slice(0,5);
-const dayKey = iso => { const d = new Date(iso); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
-const mondayOf = dateStr => { const d = new Date(`${dateStr}T00:00:00`); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return dayKey(d.toISOString().slice(0,10) + 'T00:00:00'); };
+const fmtDate = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const dayKey = iso => fmtDate(new Date(iso));
+const mondayOf = dateStr => { const d = new Date(`${dateStr}T00:00:00`); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return fmtDate(d); };
 
 async function fetchJson(path) {
   const response = await fetch(path, {cache:'no-store'});
