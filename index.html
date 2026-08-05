@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quant Strategy 工作紀錄</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1020; --card:#141b2d; --line:#26324c; --text:#edf2ff; --muted:#9eabc7; --claude:#db8b5c; --codex:#5aa8ff; --good:#63d7a2; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+    main { width:min(1180px,calc(100% - 28px)); margin:auto; padding:32px 0 48px; }
+    header,section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:18px; }
+    h1,h2,h3,p { margin-top:0; } h1 { margin-bottom:6px; } h2 { font-size:1.2rem; }
+    .muted,footer { color:var(--muted); } .error { border-color:#d65f5f; color:#ffd0d0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+    .kpi { font-size:2rem; font-weight:700; }
+    .legend { display:flex; gap:16px; color:var(--muted); } .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:5px; }
+    .bars { display:grid; grid-template-columns:repeat(30,minmax(9px,1fr)); align-items:end; height:190px; gap:4px; padding-top:16px; border-bottom:1px solid var(--line); }
+    .bar { display:flex; flex-direction:column-reverse; min-height:2px; border-radius:3px 3px 0 0; overflow:hidden; }
+    .bar span { display:block; min-height:1px; } .claude { background:var(--claude); } .codex { background:var(--codex); }
+    details { border-top:1px solid var(--line); padding:10px 0; } details:first-child { border-top:0; }
+    summary { cursor:pointer; } pre { white-space:pre-wrap; color:var(--muted); margin:8px 0 0; }
+    table { width:100%; border-collapse:collapse; } th,td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; } th { color:var(--muted); }
+    .scroll { overflow:auto; } select { background:var(--bg); color:var(--text); border:1px solid var(--line); border-radius:7px; padding:7px; }
+    canvas { width:100%; height:220px; background:#0d1425; border:1px solid var(--line); border-radius:8px; }
+    .small-chart canvas { height:130px; }
+    footer { text-align:center; padding:8px; }
+    @media (max-width:600px) { main { width:min(100% - 16px,1180px); padding-top:12px; } header,section { padding:14px; } th,td { padding:6px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Quant Strategy 工作紀錄</h1>
+    <p class="muted">每日彙整本機 AI 工時、版本紀錄與研究投組回測快照。本頁為公開頁;快照為研究用回測重播,非實盤或 paper 交易績效,不構成投資建議,亦不代表任何策略已通過推廣或上線閘門。</p>
+  </header>
+  <section id="error" class="error" hidden><h2>資料載入失敗</h2><p id="error-message"></p></section>
+  <section>
+    <h2>近 30 日 AI 工時</h2>
+    <div class="grid"><div><div id="total-hours" class="kpi">—</div><div class="muted">累計小時</div></div><div class="legend"><span><i class="dot claude"></i>Claude Code</span><span><i class="dot codex"></i>Codex</span></div></div>
+    <div id="hours-bars" class="bars" aria-label="近 30 日每日工時長條圖"></div>
+  </section>
+  <section>
+    <h2>Commits</h2>
+    <div id="commits"></div>
+  </section>
+  <section>
+    <h2>AI 產出索引</h2>
+    <div class="scroll"><table><thead><tr><th>日期</th><th>類型</th><th>標題</th><th>檔案</th></tr></thead><tbody id="outputs"></tbody></table></div>
+  </section>
+  <section>
+    <div class="grid"><div><h2>策略投組快照</h2></div><div><label for="snapshot-date">快照日期 </label><select id="snapshot-date"></select></div></div>
+    <div id="snapshot-message" class="muted"></div>
+    <p id="strategies"></p>
+    <div class="scroll"><table><thead><tr><th>指標</th><th>值</th></tr></thead><tbody id="metrics"></tbody></table></div>
+    <div class="grid">
+      <div><h3>Equity</h3><canvas id="equity" role="img" aria-label="權益曲線"></canvas></div>
+      <div><h3>Drawdown</h3><canvas id="drawdown" role="img" aria-label="回撤曲線"></canvas></div>
+    </div>
+    <h3>歷史趨勢</h3>
+    <div class="grid small-chart">
+      <div><h3>Total return</h3><canvas id="return-history" role="img" aria-label="歷史總報酬趨勢"></canvas></div>
+      <div><h3>Sharpe</h3><canvas id="sharpe-history" role="img" aria-label="歷史 Sharpe 趨勢"></canvas></div>
+    </div>
+  </section>
+  <footer>資料產生時間：<span id="generated-at">—</span> · 資料每日更新一次</footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const text = value => value === null || value === undefined ? '—' : String(value);
+const number = value => typeof value === 'number' ? value.toLocaleString(undefined,{maximumFractionDigits:6}) : text(value);
+const escapeHtml = value => text(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+
+async function fetchJson(path) {
+  const response = await fetch(path, {cache:'no-store'});
+  if (!response.ok) throw new Error(`${path}: ${response.status} ${response.statusText}`);
+  return response.json();
+}
+
+function renderHours(daily) {
+  const rows = [...daily].sort((a,b) => a.date.localeCompare(b.date)).slice(-30);
+  const max = Math.max(1,...rows.map(row => row.total_minutes || 0));
+  $('total-hours').textContent = (rows.reduce((sum,row) => sum + (row.total_minutes || 0),0) / 60).toFixed(1);
+  $('hours-bars').innerHTML = rows.map(row => {
+    const c = 170 * (row.claude_minutes || 0) / max;
+    const x = 170 * (row.codex_minutes || 0) / max;
+    return `<div class="bar" title="${escapeHtml(row.date)}: ${escapeHtml(number(row.total_minutes))} 分"><span class="claude" style="height:${c}px"></span><span class="codex" style="height:${x}px"></span></div>`;
+  }).join('');
+}
+
+function renderCommits(commits) {
+  const groups = Object.groupBy ? Object.groupBy(commits, row => row.date.slice(0,10)) : commits.reduce((all,row) => ((all[row.date.slice(0,10)] ||= []).push(row),all),{});
+  $('commits').innerHTML = Object.entries(groups).map(([date,rows]) => `<h3>${escapeHtml(date)}</h3>${rows.map(row => `<details><summary><code>${escapeHtml(row.hash)}</code> ${escapeHtml(row.subject)} <span class="muted">· ${escapeHtml(row.author)} · ${escapeHtml(row.files_changed)} files</span></summary><pre>${escapeHtml(row.body)}</pre></details>`).join('')}`).join('') || '<p class="muted">沒有 commit。</p>';
+}
+
+function renderOutputs(rows) {
+  $('outputs').innerHTML = rows.map(row => `<tr><td>${escapeHtml(row.date)}</td><td>${escapeHtml(row.type)}</td><td>${escapeHtml(row.title)}</td><td><code>${escapeHtml(row.filename)}</code></td></tr>`).join('') || '<tr><td colspan="4">沒有索引資料。</td></tr>';
+}
+
+function drawLine(canvas, values, color) {
+  const ratio = window.devicePixelRatio || 1;
+  const width = Math.max(260,canvas.clientWidth), height = canvas.clientHeight;
+  canvas.width = width * ratio; canvas.height = height * ratio;
+  const ctx = canvas.getContext('2d'); ctx.scale(ratio,ratio); ctx.clearRect(0,0,width,height);
+  const clean = values.map(Number).filter(Number.isFinite);
+  if (!clean.length) { ctx.fillStyle='#9eabc7'; ctx.fillText('資料不可用',12,24); return; }
+  let min = Math.min(...clean), max = Math.max(...clean); if (min === max) { min -= 1; max += 1; }
+  ctx.strokeStyle='#26324c'; ctx.beginPath(); ctx.moveTo(8,height-18); ctx.lineTo(width-8,height-18); ctx.stroke();
+  ctx.strokeStyle=color; ctx.lineWidth=2; ctx.beginPath();
+  clean.forEach((value,index) => { const x=8+index*(width-16)/Math.max(1,clean.length-1); const y=8+(max-value)*(height-28)/(max-min); index ? ctx.lineTo(x,y) : ctx.moveTo(x,y); });
+  ctx.stroke(); ctx.fillStyle='#9eabc7'; ctx.fillText(number(max),10,15); ctx.fillText(number(min),10,height-4);
+}
+
+function renderSnapshot(snapshot) {
+  $('snapshot-message').textContent = `Run: ${text(snapshot.run_id)} · 產生時間 ${text(snapshot.generated_at)}`;
+  $('strategies').textContent = `策略：${(snapshot.strategies || []).join(', ') || '—'}`;
+  const metrics = snapshot.metrics?.available === false ? {} : (snapshot.metrics || {});
+  $('metrics').innerHTML = Object.entries(metrics).filter(([,value]) => typeof value !== 'object').map(([key,value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(number(value))}</td></tr>`).join('') || `<tr><td colspan="2">${escapeHtml(snapshot.metrics?.reason || '指標不可用')}</td></tr>`;
+  const equity = Array.isArray(snapshot.equity) ? snapshot.equity : [];
+  drawLine($('equity'), equity.map(row => row.equity), '#63d7a2');
+  drawLine($('drawdown'), equity.map(row => row.drawdown), '#db6b78');
+}
+
+async function renderSnapshots() {
+  const index = await fetchJson('./snapshots/index.json');
+  const dates = index.dates || [], select = $('snapshot-date');
+  select.innerHTML = dates.map(date => `<option value="${escapeHtml(date)}">${escapeHtml(date)}</option>`).join('');
+  if (!dates.length) { $('snapshot-message').textContent='尚無投組快照。'; renderSnapshot({}); return; }
+  const snapshots = await Promise.all(dates.map(date => fetchJson(`./snapshots/${date}.json`)));
+  const show = async () => renderSnapshot(snapshots.find(row => row.date === select.value) || snapshots[0]);
+  select.addEventListener('change',show); await show();
+  const chronological = [...snapshots].reverse();
+  drawLine($('return-history'), chronological.map(row => row.metrics?.total_return), '#63d7a2');
+  drawLine($('sharpe-history'), chronological.map(row => row.metrics?.sharpe), '#5aa8ff');
+}
+
+async function main() {
+  try {
+    const worklog = await fetchJson('./worklog.json');
+    renderHours(worklog.daily || []); renderCommits(worklog.commits || []); renderOutputs(worklog.ai_outputs || []);
+    $('generated-at').textContent = text(worklog.generated_at);
+    await renderSnapshots();
+  } catch (error) {
+    $('error').hidden = false; $('error-message').textContent = error.message;
+  }
+}
+main();
+</script>
+</body>
+</html>
