@@ -238,10 +238,11 @@ function strategyCard(s, index) {
         <p class="muted">狀態分佈：${Object.entries(s.shadow.status_counts || {}).map(([k,v]) => `${escapeHtml(k)} ×${v}`).join('、') || '—'}</p>`;
   }
   if (s.rebalances) {
+    const legs = side => Object.entries(side || {}).map(([sym,usd]) => `${sym} $${Number(usd).toLocaleString()}`).join(', ');
     extra += s.rebalances.available === false
       ? `<p class="muted">換倉明細(各幣種多空金額)整備中：${escapeHtml(s.rebalances.reason)}</p>`
-      : `<h3>換倉紀錄</h3><div class="scroll"><table><thead><tr><th>日期</th><th>做多(金額)</th><th>做空(金額)</th></tr></thead><tbody>${
-          s.rebalances.map(r => `<tr><td>${escapeHtml(r.date)}</td><td>${escapeHtml(Object.entries(r.long||{}).map(([sym,usd]) => `${sym} $${Number(usd).toLocaleString()}`).join(', '))}</td><td>${escapeHtml(Object.entries(r.short||{}).map(([sym,usd]) => `${sym} $${Number(usd).toLocaleString()}`).join(', '))}</td></tr>`).join('')
+      : `<h3>換倉紀錄(每週,新到舊)</h3>${s.rebalance_notional_note ? `<p class="muted" style="font-size:.8rem">${escapeHtml(s.rebalance_notional_note)}</p>` : ''}<div class="scroll" style="max-height:340px"><table><thead><tr><th>日期</th><th>做多(金額)</th><th>做空(金額)</th><th class="num">該期報酬</th></tr></thead><tbody>${
+          [...s.rebalances].reverse().map(r => `<tr><td>${escapeHtml(r.date)}</td><td>${escapeHtml(legs(r.long))}</td><td>${escapeHtml(legs(r.short))}</td><td class="num" style="color:${(r.period_return||0) >= 0 ? 'var(--good)' : '#db6b78'}">${(100*(r.period_return||0)).toFixed(2)}%</td></tr>`).join('')
         }</tbody></table></div>`;
   }
   const window = Array.isArray(s.window) ? `<span class="muted">回測窗口 ${escapeHtml(s.window[0])} → ${escapeHtml(s.window[1])}</span>` : '';
