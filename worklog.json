@@ -1,12 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-05T03:06:56.474890+00:00",
+  "generated_at": "2026-08-05T08:45:25.740539+00:00",
   "daily_activity": [
+    {
+      "date": "2026-08-05",
+      "items": [
+        "[CI] skip CI on the orphan public-status branch",
+        "[文件] 2026-08-05 session-end handoff and snapshot refresh",
+        "[文件] rule the artifact mislabel and guard artifact identity",
+        "[文件] candidate input-quality review with admission form",
+        "[文件] reconcile handoff state with verified repository facts",
+        "Merge pull request from Frisk0316/feature/deribit-moneyness-hypotheses",
+        "[功能] public worklog page generators, gantt work-time views, strategy cards",
+        "[功能] opt-in holdings log for funding XS dispersion reporting"
+      ]
+    },
     {
       "date": "2026-08-04",
       "items": [
         "[功能] complete terminal rerun",
         "[文件] merged, pending Codex, redundant",
+        "Merge pull request from Frisk0316/feature/deribit-moneyness-hypotheses",
         "[文件] ruled contract error, restored to, authorized",
         "[修正] omit reduceOnly/posSide on spot cash orders (review fix)",
         "[文件] note Windows verify.ps1 alternative for docs-impact (A10 sync)",
@@ -90,6 +104,7 @@
         "[文件] unblock.. probe via dated reference regen",
         "[文件] record moneyness probe contract stop",
         "[功能] register moneyness vol probes",
+        "Merge pull request from Frisk0316/feature/deribit-moneyness-hypotheses",
         "[文件] plan.. Stage-2 probe execution with frozen grids",
         "[文件] testnet plumbing verification checklist for live layer",
         "[文件] close fix-wave review; register order-lifecycle race class",
@@ -121,6 +136,7 @@
         "[功能] add ATM/ITM/OTM moneyness buckets to Deribit option surface",
         "[文件] GenAI strategy pipeline ADR, manifests, exports and session handoffs (in-flight wrap-up)",
         "[功能] Deribit RV30 derived series and data-route updates (in-flight wrap-up)",
+        "Merge pull request from Frisk0316/feature/h014-e052-shadow",
         "[文件] synchronize runtime data and research outcomes",
         "[功能] execute pre-registered strategy-finding round",
         "[功能] retain Deribit volatility and full option chains",
@@ -155,6 +171,7 @@
     {
       "date": "2026-07-21",
       "items": [
+        "Merge pull request from Frisk0316/feature/h014-e052-shadow",
         "[修正] enforce distinctness feasibility",
         "[文件] sync review-fix handoff",
         "[修正] close A1-A3 and B1-B4 findings",
@@ -172,6 +189,12 @@
         "[功能] add research ledger projection",
         "[功能] add canonical history coverage audit",
         "[功能] enforce stage2 power caller contracts"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "items": [
+        "Merge pull request from Frisk0316/feature/h014-e052-shadow"
       ]
     },
     {
@@ -2448,9 +2471,30 @@
     {
       "tool": "claude",
       "start": "2026-08-05T02:19:48.877000Z",
-      "end": "2026-08-05T03:01:20.960000Z",
-      "duration_minutes": 41.53,
-      "event_count": 452
+      "end": "2026-08-05T04:17:05.852000Z",
+      "duration_minutes": 117.28,
+      "event_count": 808
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-05T03:17:39.730000Z",
+      "end": "2026-08-05T03:37:04.688000Z",
+      "duration_minutes": 19.42,
+      "event_count": 295
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-05T05:05:03.218000Z",
+      "end": "2026-08-05T05:24:39.464000Z",
+      "duration_minutes": 19.6,
+      "event_count": 296
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-05T05:25:34.964000Z",
+      "end": "2026-08-05T06:57:03.240000Z",
+      "duration_minutes": 91.47,
+      "event_count": 318
     }
   ],
   "daily": [
@@ -2869,14 +2913,39 @@
     },
     {
       "date": "2026-08-05",
-      "claude_minutes": 45.78,
-      "codex_minutes": 0.0,
-      "overlap_minutes": 0.0,
-      "total_minutes": 45.78
+      "claude_minutes": 213.0,
+      "codex_minutes": 39.02,
+      "overlap_minutes": 19.42,
+      "total_minutes": 232.61
     }
   ],
-  "skipped_lines": 1793,
+  "skipped_lines": 1858,
   "ai_outputs": [
+    {
+      "date": "2026-08-05",
+      "title": "資金費率多空:換倉持倉 log(供工作紀錄頁)— 交付 Codex(2026-08-05)",
+      "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Session Handoff: candidate input-quality review — 2026-08-05",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Handoff: state reconciliation + input-quality review — 2026-08-05",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Context Handoff: candidate input-quality review — 2026-08-05",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Candidate input-quality review — 2026-08-05",
+      "type": "other"
+    },
     {
       "date": "2026-08-04",
       "title": "部分授權： / / — Codex tasks",
