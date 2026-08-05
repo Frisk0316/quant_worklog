@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-05T03:04:16.331733+00:00",
+  "generated_at": "2026-08-05T03:06:56.474890+00:00",
   "daily_activity": [
     {
       "date": "2026-08-04",
       "items": [
         "[功能] complete terminal rerun",
-        "[文件] #20 merged, pending Codex, redundant",
-        "[文件] ruled contract error, F-S5 restored to, authorized",
-        "[修正] omit reduceOnly/posSide on spot cash orders (C3 review fix)",
+        "[文件] merged, pending Codex, redundant",
+        "[文件] ruled contract error, restored to, authorized",
+        "[修正] omit reduceOnly/posSide on spot cash orders (review fix)",
         "[文件] note Windows verify.ps1 alternative for docs-impact (A10 sync)",
         "[文件] unquote generated runtime paths so link check passes",
         "Merge branch 'feature/deribit-moneyness-hypotheses' of https://github.com/Frisk0316/quant_strategy into feature/deribit-moneyness-hypotheses",
@@ -20,7 +20,7 @@
         "[修正] fail closed on missing instrument specs",
         "fixup! fix(execution): propagate reduce-only orders to OKX",
         "fixup! fix(execution): fail closed on missing instrument specs",
-        "[文件] I68 defines \"execution-ready\" for R6.8/I53",
+        "[文件] defines \"execution-ready\" for R6.8",
         "[文件] authorize Stage-2 and; record funnel diagnosis",
         "[修正] derive the zero-fill disclaimer from journal data",
         "[功能] daily public research-status page via orphan branch"
@@ -55,7 +55,7 @@
         "[文件] weekly log 2026-07-27..08-02 in plain language",
         "[文件] session state, changelog, and pipeline-audit handoffs",
         "archive NAAIM exposure index history before 2026-08-01 paywall",
-        "[功能] cross-venue options IV collector  + CFTC COT + Cboe ingestion",
+        "[功能] cross-venue options IV collector + CFTC COT + Cboe ingestion",
         "[功能] testnet activation + Binance/OKX paper-trade connectivity",
         "[修正] count-invariant Deribit trade pagination + payload-only upsert"
       ]
@@ -69,7 +69,7 @@
     {
       "date": "2026-07-29",
       "items": [
-        "[文件] accept..; apply I27 ASSIGN rulings for",
+        "[文件] accept..; apply ASSIGN rulings for",
         "[功能] register through Stage-2 slate",
         "run and Stage-2 probes",
         "run Stage-2 boundary probe",
@@ -81,7 +81,7 @@
         "[文件] register / literature-backed candidates",
         "[修正] promote candles in daily shadow ops so the cycle stops fail-closing",
         "[修正] repair shadow scheduler power conditions and exit-code masking",
-        "[功能] funding-settlement probe ( refuted) + round-infra slice 1",
+        "[功能] funding-settlement probe (refuted) + round-infra slice 1",
         "[文件] register / event batch; plan probe + infra slice",
         "[文件] close -unblocked limited probe",
         "record Stage-2 failure",
@@ -92,7 +92,7 @@
         "[功能] register moneyness vol probes",
         "[文件] plan.. Stage-2 probe execution with frozen grids",
         "[文件] testnet plumbing verification checklist for live layer",
-        "[文件] close fix-wave review; register F59 order-lifecycle race class",
+        "[文件] close fix-wave review; register order-lifecycle race class",
         "[修正] reconcile cancel races, sweep orphans, enforce resting time; declare honest-blocked validation contract"
       ]
     },
@@ -100,7 +100,7 @@
       "date": "2026-07-28",
       "items": [
         "[文件] plan live fix wave + honest-blocked diff-validation entry",
-        "[文件] approve live delivery with findings; register R8.8/R8.9 + I56",
+        "[文件] approve live delivery with findings; register R8.8/R8.9 +",
         "[功能] implement live layer (inactive, testnet default)",
         "[文件] accept and plan Codex live-execution implementation",
         "[文件] draft live-execution layer (parallel-track)",
@@ -178,13 +178,13 @@
       "date": "2026-07-15",
       "items": [
         "[文件] record checkpoint failure",
-        "[功能] add inverse-perp Stage-3 runner and I44 golden",
+        "[功能] add inverse-perp Stage-3 runner and golden",
         "[文件] pre-register Stage-3 validation contract",
         "[功能] D6 Deribit perpetual 1m ingestion + reprobe (Codex, Claude-reviewed PASS)",
         "[文件] inverse-perpetual research accounting (user-signed-off)",
         "register user-approved daily task + advancement rationale",
         "[文件] user ratifies taxonomy_004/; lift freeze",
-        "feat(shadow)+docs(review): clear review conditions, P1.4 unattended mode, quarantine taxonomy_004"
+        "feat(shadow)+docs(review): clear review conditions, unattended mode, quarantine taxonomy_004"
       ]
     },
     {
@@ -193,12 +193,12 @@
         "[文件] accept shadow layer with two findings",
         "[功能] extended-window pass + shadow-execution layer",
         "[文件] first statistical-gate pass + options accounting",
-        "Merge pull request #13 from Frisk0316/feature/taxonomy003-stage3",
-        "Merge pull request #12 from Frisk0316/feature/f-vol-regime-opt-stage2",
-        "Merge pull request #11 from Frisk0316/codex/pipeline-batch1-stage3",
+        "Merge pull request from Frisk0316/feature/taxonomy003-stage3",
+        "Merge pull request from Frisk0316/feature/f-vol-regime-opt-stage2",
+        "Merge pull request from Frisk0316/codex/pipeline-batch1-stage3",
         "[文件] sync and taxonomy_003 state",
         "[功能] record taxonomy_003 stage-3 sweep",
-        "[功能] add F-VOL premium calibration evidence"
+        "[功能] add premium calibration evidence"
       ]
     },
     {
@@ -209,19 +209,19 @@
         "[文件] correct commit SHA reference",
         "[文件] record 2026-07-13 Codex review-fix session",
         "[修正] address Codex review findings",
-        "[文件] record R1.5/I34 enforcement-point closure (A2/A9 doc impact)",
-        "[修正] route explicit ct_val through shared validator ( review)"
+        "[文件] record R1.5/ enforcement-point closure (A2/A9 doc impact)",
+        "[修正] route explicit ct_val through shared validator (review)"
       ]
     },
     {
       "date": "2026-07-12",
       "items": [
-        "Merge pull request #9 from Frisk0316/codex/pipeline-batch1-stage3",
-        "Merge pull request #10 from Frisk0316/claude/p1-governance-docs",
-        "[功能] P1.1 enforcement tooling + P1.2 docs cleanup",
-        "[文件] record P0.4 Option B execution and",
+        "Merge pull request from Frisk0316/codex/pipeline-batch1-stage3",
+        "Merge pull request from Frisk0316/claude/p1-governance-docs",
+        "[功能] enforcement tooling + docs cleanup",
+        "[文件] record Option B execution and",
         "Merge remote-tracking branch 'origin/main' into codex/pipeline-batch1-stage3",
-        "[功能] P0.1-P0.3 trust-boundary fixes plus 2026-07-12 audit repair",
+        "[功能] trust-boundary fixes plus 2026-07-12 audit repair",
         "[文件] record commit and push session",
         "[功能] add Deribit feeds and research checkpoints",
         "[功能] batched resumable turtle sweeps with raised caps"
@@ -247,7 +247,7 @@
       "items": [
         "[功能] add OI stage2 probe and candidate handoff",
         "[文件] record turtle validation-contract relabel in manifest",
-        "Merge pull request #8 from Frisk0316/codex/pipeline-batch1-stage3",
+        "Merge pull request from Frisk0316/codex/pipeline-batch1-stage3",
         "[功能] normalize candle timestamp precision for DB/parquet parity"
       ]
     },
@@ -258,12 +258,12 @@
         "[修正] keep validation contract nonportable",
         "[文件] final state sync + turtle reference source",
         "[功能] funding-xs Stage-3 checkpoint verdict + turtle platform accepted",
-        "[功能] P9 DB-sourced universe membership + first Stage-1 spec",
+        "[功能] DB-sourced universe membership + first Stage-1 spec",
         "[文件] complete M2-R1 verbatim history migration",
         "[功能] warmup-window breadth fix + scheduled liquidation ingest",
-        "[文件] sync pipeline real-data run state and P9 follow-up",
-        "[功能] real-data acceptance runs for P1/P5/P8 + P9 task",
-        "[功能] implement inlet improvements P1-P8 with review fixes",
+        "[文件] sync pipeline real-data run state and follow-up",
+        "[功能] real-data acceptance runs for + task",
+        "[功能] implement inlet improvements - with review fixes",
         "[文件] record maintenance completion handoff",
         "[測試] cover monitoring and map stocks sandbox",
         "[測試] add no-db replay backtest smoke",
@@ -296,23 +296,23 @@
         "[文件] spec Codex task for the 3 harness/CI governance gaps",
         "[文件] backfill lifecycle frontmatter on 32 durable docs (docs-check now 0 warnings)",
         "[文件] record alpha-lab test isolation + drafted-candidate Stage-3 contract",
-        "[修正] harden C3 sentiment as-of lookup",
+        "[修正] harden sentiment as-of lookup",
         "[修正] reconcile research pipeline budgets",
-        "Merge pull request #7 from Frisk0316/codex/pipeline-batch1-stage3",
+        "Merge pull request from Frisk0316/codex/pipeline-batch1-stage3",
         "[文件] sync automation ledgers and handoff state",
         "[功能] add idea generator and alpha lab adapter",
         "[功能] add family minting distinctness check",
         "[功能] add checkpoint one auto precheck",
-        "[功能] run C3 sentiment stage 3 checkpoint",
+        "[功能] run sentiment stage 3 checkpoint",
         "[文件] add full-auto research pipeline specs"
       ]
     },
     {
       "date": "2026-06-29",
       "items": [
-        "[功能] land pipeline batch 2 checkpoint + C2 funding-carry realism re-cost",
+        "[功能] land pipeline batch 2 checkpoint + funding-carry realism re-cost",
         "[文件] add c3 stage2 pass summary fix task",
-        "Merge pull request #6 from Frisk0316/codex/pipeline-batch1-stage3",
+        "Merge pull request from Frisk0316/codex/pipeline-batch1-stage3",
         "[修正] align c3 stage2 pass summary",
         "[文件] record stage2 feasibility automation state",
         "[文件] document stage2 feasibility artifact contract",
@@ -376,7 +376,7 @@
         "[維護] delete pre-6/18 artifacts + reconcile doc references",
         "[文件] record XS momentum Phase C review + blocked/shelved decision",
         "[修正] correct XS momentum lookahead + DSR computation; portfolio-vol sizing",
-        "Merge pull request #5 from Frisk0316/codex/xs-momentum-universe-scaffold",
+        "Merge pull request from Frisk0316/codex/xs-momentum-universe-scaffold",
         "[文件] add multi venue market klines handoff",
         "[測試] add xs momentum db smoke artifact",
         "[文件] update validation methodology appendix",
@@ -391,7 +391,7 @@
         "[功能] add xs momentum phase c runner",
         "[功能] add xs momentum universe scaffold",
         "[文件] D3 review of XS momentum scaffold",
-        "[文件] fix XS momentum Task C1 funding sign to match DOMAIN_RULES R3.1",
+        "[文件] fix XS momentum Task funding sign to match DOMAIN_RULES R3.1",
         "[功能] surface OHLCV source exchange in coverage API + UI",
         "[文件] register XS momentum hypothesis + planned experiment",
         "[文件] XS momentum + universe data infra implementation plan",
@@ -408,7 +408,7 @@
       "items": [
         "save validation lab progress",
         "define execution profiles",
-        "Merge pull request #4 from Frisk0316/codex/impl-multi-venue-instrument-specs",
+        "Merge pull request from Frisk0316/codex/impl-multi-venue-instrument-specs",
         "[修正] use database specs for lot and min sizes to improve order handling",
         "[功能] checkpoint backtest validation and data fixes",
         "[文件] record loading performance handoffs",
@@ -422,7 +422,7 @@
     {
       "date": "2026-06-18",
       "items": [
-        "Merge pull request #3 from Frisk0316/codex/impl-multi-venue-instrument-specs",
+        "Merge pull request from Frisk0316/codex/impl-multi-venue-instrument-specs",
         "[文件] record branch consolidation handoff",
         "integrate universal price chart",
         "integrate multi-venue design log",
@@ -430,7 +430,7 @@
         "[文件] record Binance DB parity mismatch",
         "[測試] prove DB parity source scoping",
         "Delete obsolete powerpoint",
-        "[文件] close out P1 task 6 manifest",
+        "[文件] close out task 6 manifest",
         "[修正] scope DB parity candles by run exchange",
         "[文件] 2026-06-17 multi-venue design + coordination work log"
       ]
@@ -447,8 +447,8 @@
         "[修正] render price charts progressively",
         "[功能] add venue instrument specs seed",
         "[文件] workstream sequencing + price-chart task brief",
-        "[文件] add P1 implementation plan for multi-venue specs",
-        "[文件] add multi-venue instrument specs (P0 design)",
+        "[文件] add implementation plan for multi-venue specs",
+        "[文件] add multi-venue instrument specs (design)",
         "[功能] gate validation source provenance"
       ]
     },
@@ -466,7 +466,7 @@
         "[文件] add Doc Sync, Intelligence, and Context Resilience harnesses",
         "[功能] remove order-book market-making strategies from active scope",
         "[文件] add AI context, feature/UI/data maps, Makefile targets, and Codex prompts",
-        "Merge pull request #2 from Frisk0316/feature/chart-ux-overhaul",
+        "Merge pull request from Frisk0316/feature/chart-ux-overhaul",
         "[功能] harden differential validation gates",
         "[文件] record signal point validation scope",
         "[文件] update handoff validation policy"
@@ -476,7 +476,7 @@
       "date": "2026-06-11",
       "items": [
         "Refactor code structure for improved readability and maintainability",
-        "Merge pull request #1 from Frisk0316/feature/chart-ux-overhaul",
+        "Merge pull request from Frisk0316/feature/chart-ux-overhaul",
         "[功能] show validation engine limits in UI",
         "[功能] add external validation portability contracts"
       ]
@@ -2879,7 +2879,7 @@
   "ai_outputs": [
     {
       "date": "2026-08-04",
-      "title": "部分授權：C3 / C5 / C10 — Codex tasks",
+      "title": "部分授權： / / — Codex tasks",
       "type": "codex-tasks"
     },
     {
@@ -2984,12 +2984,12 @@
     },
     {
       "date": "2026-08-03",
-      "title": "Session Handoff: F1 + A1-A5 + B1 — 2026-08-03",
+      "title": "Session Handoff: API security CI fix — 2026-08-03",
       "type": "handoff"
     },
     {
       "date": "2026-08-03",
-      "title": "Session Handoff: API security CI fix — 2026-08-03",
+      "title": "Session Handoff: + A1-A5 + B1 — 2026-08-03",
       "type": "handoff"
     },
     {
@@ -3014,17 +3014,17 @@
     },
     {
       "date": "2026-08-03",
-      "title": "Context Handoff: F1 + A1-A5 + B1 — 2026-08-03",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-08-03",
       "title": "Context Handoff: API security CI fix — 2026-08-03",
       "type": "handoff"
     },
     {
       "date": "2026-08-03",
-      "title": "Claude review: F1 + + B1 security batch — 2026-08-03",
+      "title": "Context Handoff: + A1-A5 + B1 — 2026-08-03",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Claude review: + + B1 security batch — 2026-08-03",
       "type": "other"
     },
     {
@@ -3129,7 +3129,7 @@
     },
     {
       "date": "2026-07-30",
-      "title": "Decision memo: official CME BTC futures data  — recommend NOT buying",
+      "title": "Decision memo: official CME BTC futures data — recommend NOT buying",
       "type": "other"
     },
     {
@@ -3164,7 +3164,7 @@
     },
     {
       "date": "2026-07-29",
-      "title": "Session Handoff:.. registration and I49 stop — 2026-07-29",
+      "title": "Session Handoff:.. registration and stop — 2026-07-29",
       "type": "handoff"
     },
     {
@@ -3224,12 +3224,12 @@
     },
     {
       "date": "2026-07-28",
-      "title": "live-execution layer implementation  — Codex tasks",
+      "title": "live-execution layer implementation — Codex tasks",
       "type": "codex-tasks"
     },
     {
       "date": "2026-07-28",
-      "title": "Claude review: live-execution layer ( Codex delivery)",
+      "title": "Claude review: live-execution layer (Codex delivery)",
       "type": "other"
     },
     {
@@ -3359,7 +3359,7 @@
     },
     {
       "date": "2026-07-24",
-      "title": "Codex Task:  Stage-2 probe",
+      "title": "Codex Task: Stage-2 probe",
       "type": "codex-tasks"
     },
     {
@@ -3449,7 +3449,7 @@
     },
     {
       "date": "2026-07-18",
-      "title": "Claude Review: ( Stage-2 shelve)",
+      "title": "Claude Review: (Stage-2 shelve)",
       "type": "other"
     },
     {
@@ -3589,7 +3589,7 @@
     },
     {
       "date": "2026-07-15",
-      "title": "Claude Review: shadow conditions + P1.4 + unauthorized taxonomy_004 — 2026-07-15",
+      "title": "Claude Review: shadow conditions + + unauthorized taxonomy_004 — 2026-07-15",
       "type": "other"
     },
     {
@@ -3634,12 +3634,12 @@
     },
     {
       "date": "2026-07-14",
-      "title": "Codex Task List: Deribit shadow-execution layer ( v1)",
+      "title": "Codex Task List: Deribit shadow-execution layer (v1)",
       "type": "codex-tasks"
     },
     {
       "date": "2026-07-14",
-      "title": "Claude Review: shadow-execution layer ( v1) — 2026-07-14",
+      "title": "Claude Review: shadow-execution layer (v1) — 2026-07-14",
       "type": "other"
     },
     {
@@ -3669,7 +3669,7 @@
     },
     {
       "date": "2026-07-13",
-      "title": "Session Handoff: Codex /#10 review fixes — 2026-07-13",
+      "title": "Session Handoff: Codex review fixes — 2026-07-13",
       "type": "handoff"
     },
     {
@@ -3689,13 +3689,18 @@
     },
     {
       "date": "2026-07-13",
-      "title": "Codex Task List: Stage-2 ( /)",
+      "title": "Codex Task List: Stage-2 (/)",
       "type": "codex-tasks"
     },
     {
       "date": "2026-07-13",
-      "title": "Claude Review: Stage-2 calibration  — 2026-07-13",
+      "title": "Claude Review: Stage-2 calibration — 2026-07-13",
       "type": "other"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Session Handoff: governance + docs cleanup — 2026-07-12",
+      "type": "handoff"
     },
     {
       "date": "2026-07-12",
@@ -3704,17 +3709,7 @@
     },
     {
       "date": "2026-07-12",
-      "title": "Session Handoff: P1.1 governance + P1.2 docs cleanup — 2026-07-12",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-07-12",
-      "title": "Session Handoff: P0.4 Option B integration — 2026-07-12",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-07-12",
-      "title": "Session Handoff: P0.1-P0.3 implementation — 2026-07-12",
+      "title": "Session Handoff: Option B integration — 2026-07-12",
       "type": "handoff"
     },
     {
@@ -3739,6 +3734,11 @@
     },
     {
       "date": "2026-07-12",
+      "title": "Session Handoff: - implementation — 2026-07-12",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-07-12",
       "title": "Project Diagnosis Follow-up Tasks",
       "type": "other"
     },
@@ -3750,11 +3750,6 @@
     {
       "date": "2026-07-12",
       "title": "Context Handoff: Project diagnosis and baseline repair — 2026-07-12",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-07-12",
-      "title": "Context Handoff: P0.1-P0.3 implementation — 2026-07-12",
       "type": "handoff"
     },
     {
@@ -3779,12 +3774,17 @@
     },
     {
       "date": "2026-07-12",
-      "title": "Context + Session Handoff: Claude review of P0.1–P0.3 and / — 2026-07-12",
+      "title": "Context Handoff: - implementation — 2026-07-12",
       "type": "handoff"
     },
     {
       "date": "2026-07-12",
-      "title": "Claude Review: P0.1–P0.3 scopes and / research decisions — 2026-07-12",
+      "title": "Context + Session Handoff: Claude review of – and / — 2026-07-12",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Claude Review: – scopes and / research decisions — 2026-07-12",
       "type": "other"
     },
     {
@@ -3939,7 +3939,7 @@
     },
     {
       "date": "2026-07-03",
-      "title": "Session Handoff: Pipeline Improvement P1-P8 - 2026-07-03",
+      "title": "Session Handoff: Pipeline Improvement - - 2026-07-03",
       "type": "handoff"
     },
     {
@@ -3954,7 +3954,7 @@
     },
     {
       "date": "2026-07-03",
-      "title": "Pipeline 自動發想改善任務 P1–P8",
+      "title": "Pipeline 自動發想改善任務",
       "type": "other"
     },
     {
@@ -3979,7 +3979,7 @@
     },
     {
       "date": "2026-07-03",
-      "title": "Context Handoff: Pipeline Improvement P1-P8 - 2026-07-03",
+      "title": "Context Handoff: Pipeline Improvement - - 2026-07-03",
       "type": "handoff"
     },
     {
@@ -4069,12 +4069,12 @@
     },
     {
       "date": "2026-06-29",
-      "title": "Task: Fix Self-Contradictory C3 Stage 2 PASS Summary",
+      "title": "Task: Fix Self-Contradictory Stage 2 PASS Summary",
       "type": "other"
     },
     {
       "date": "2026-06-29",
-      "title": "Task (Claude → Codex): C3 Fear & Greed Sentiment — Stage 3 runner + Stage-2 gate tz bugfix",
+      "title": "Task (Claude → Codex): Fear & Greed Sentiment — Stage 3 runner + Stage-2 gate tz bugfix",
       "type": "other"
     },
     {
@@ -4084,27 +4084,42 @@
     },
     {
       "date": "2026-06-29",
+      "title": "Session Handoff: Sentiment Stage 3 Verification - 2026-06-30",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Session Handoff: Sentiment Stage 3 - 2026-06-29",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-29",
       "title": "Session Handoff: Pipeline Batch 2 Checkpoint 1 - 2026-06-29",
       "type": "handoff"
     },
     {
       "date": "2026-06-29",
-      "title": "Session Handoff: C3 Sentiment Stage 3 Verification - 2026-06-30",
+      "title": "Session Handoff: Funding-Carry Realism Re-Cost - 2026-06-29",
       "type": "handoff"
     },
     {
       "date": "2026-06-29",
-      "title": "Session Handoff: C3 Sentiment Stage 3 - 2026-06-29",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-29",
-      "title": "Session Handoff: C2 Funding-Carry Realism Re-Cost - 2026-06-29",
-      "type": "handoff"
+      "title": "Funding Carry — Realism Re-Cost + Funding-Reversal Stress",
+      "type": "other"
     },
     {
       "date": "2026-06-29",
       "title": "Context Handoff: Stage 2 Feasibility Automation - 2026-06-29",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Context Handoff: Sentiment Stage 3 Verification - 2026-06-30",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Context Handoff: Sentiment Stage 3 - 2026-06-29",
       "type": "handoff"
     },
     {
@@ -4114,23 +4129,8 @@
     },
     {
       "date": "2026-06-29",
-      "title": "Context Handoff: C3 Sentiment Stage 3 Verification - 2026-06-30",
+      "title": "Context Handoff: Funding-Carry Realism Re-Cost - 2026-06-29",
       "type": "handoff"
-    },
-    {
-      "date": "2026-06-29",
-      "title": "Context Handoff: C3 Sentiment Stage 3 - 2026-06-29",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-29",
-      "title": "Context Handoff: C2 Funding-Carry Realism Re-Cost - 2026-06-29",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-29",
-      "title": "C2 Funding Carry — Realism Re-Cost + Funding-Reversal Stress",
-      "type": "other"
     },
     {
       "date": "2026-06-25",
@@ -4449,17 +4449,17 @@
     },
     {
       "date": "2026-06-18",
+      "title": "Session Handoff: Task 6 closeout - 2026-06-18",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-18",
       "title": "Session Handoff: Task 4 DB parity exchange scoping - 2026-06-18",
       "type": "handoff"
     },
     {
       "date": "2026-06-18",
       "title": "Session Handoff: Source Scope Follow-up - 2026-06-18",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-18",
-      "title": "Session Handoff: P1 Task 6 closeout - 2026-06-18",
       "type": "handoff"
     },
     {
@@ -4474,6 +4474,11 @@
     },
     {
       "date": "2026-06-18",
+      "title": "Context Handoff: Task 6 closeout - 2026-06-18",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-18",
       "title": "Context Handoff: Task 4 DB parity exchange scoping - 2026-06-18",
       "type": "handoff"
     },
@@ -4484,17 +4489,12 @@
     },
     {
       "date": "2026-06-18",
-      "title": "Context Handoff: P1 Task 6 closeout - 2026-06-18",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-18",
-      "title": "Context Handoff: P1 Branch Integration - 2026-06-18",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-18",
       "title": "Context Handoff: DB parity close-only contract - 2026-06-18",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "Context Handoff: Branch Integration - 2026-06-18",
       "type": "handoff"
     },
     {
@@ -4509,6 +4509,11 @@
     },
     {
       "date": "2026-06-17",
+      "title": "Session Handoff: Tasks 1-6 - 2026-06-17",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-06-17",
       "title": "Session Handoff: Strategy Signal Validation CI - 2026-06-17",
       "type": "handoff"
     },
@@ -4519,17 +4524,12 @@
     },
     {
       "date": "2026-06-17",
-      "title": "Session Handoff: P1 Tasks 1-6 - 2026-06-17",
-      "type": "handoff"
-    },
-    {
-      "date": "2026-06-17",
       "title": "Session Handoff: Binance/Bybit base-unit ct_val - 2026-06-17",
       "type": "handoff"
     },
     {
       "date": "2026-06-17",
-      "title": "Context Handoff: multi-venue instrument specs P1 - 2026-06-17",
+      "title": "Context Handoff: multi-venue instrument specs - 2026-06-17",
       "type": "handoff"
     },
     {
