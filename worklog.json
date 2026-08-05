@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-05T02:29:13.115590+00:00",
+  "generated_at": "2026-08-05T02:34:36.662161+00:00",
   "commits": [
     {
       "hash": "487af6c",
@@ -4949,9 +4949,9 @@
     {
       "tool": "claude",
       "start": "2026-08-05T02:19:48.877000Z",
-      "end": "2026-08-05T02:26:53.335000Z",
-      "duration_minutes": 7.07,
-      "event_count": 110
+      "end": "2026-08-05T02:33:46.690000Z",
+      "duration_minutes": 13.96,
+      "event_count": 180
     }
   ],
   "daily": [
@@ -4959,358 +4959,424 @@
       "date": "2026-05-04",
       "claude_minutes": 0.0,
       "codex_minutes": 104.15,
+      "overlap_minutes": 0.0,
       "total_minutes": 104.15
     },
     {
       "date": "2026-05-06",
       "claude_minutes": 0.0,
       "codex_minutes": 94.79,
+      "overlap_minutes": 0.0,
       "total_minutes": 94.79
     },
     {
       "date": "2026-05-07",
       "claude_minutes": 0.0,
       "codex_minutes": 80.57,
+      "overlap_minutes": 0.0,
       "total_minutes": 80.57
-    },
-    {
-      "date": "2026-05-10",
-      "claude_minutes": 0.0,
-      "codex_minutes": 10.75,
-      "total_minutes": 10.75
     },
     {
       "date": "2026-05-11",
       "claude_minutes": 0.0,
-      "codex_minutes": 132.22,
-      "total_minutes": 132.22
+      "codex_minutes": 142.97,
+      "overlap_minutes": 0.0,
+      "total_minutes": 142.97
     },
     {
       "date": "2026-05-12",
       "claude_minutes": 0.0,
-      "codex_minutes": 172.27,
-      "total_minutes": 172.27
+      "codex_minutes": 171.95,
+      "overlap_minutes": 0.0,
+      "total_minutes": 171.95
     },
     {
       "date": "2026-05-13",
       "claude_minutes": 0.0,
-      "codex_minutes": 267.22,
-      "total_minutes": 267.22
+      "codex_minutes": 255.31,
+      "overlap_minutes": 0.0,
+      "total_minutes": 255.31
     },
     {
       "date": "2026-05-14",
       "claude_minutes": 0.0,
-      "codex_minutes": 321.52,
-      "total_minutes": 321.52
+      "codex_minutes": 333.74,
+      "overlap_minutes": 0.0,
+      "total_minutes": 333.74
     },
     {
       "date": "2026-05-15",
       "claude_minutes": 0.0,
       "codex_minutes": 92.13,
+      "overlap_minutes": 0.0,
       "total_minutes": 92.13
     },
     {
       "date": "2026-05-17",
       "claude_minutes": 0.0,
       "codex_minutes": 53.57,
+      "overlap_minutes": 0.0,
       "total_minutes": 53.57
     },
     {
       "date": "2026-05-19",
       "claude_minutes": 0.0,
       "codex_minutes": 231.24,
+      "overlap_minutes": 0.0,
       "total_minutes": 231.24
     },
     {
       "date": "2026-05-21",
       "claude_minutes": 0.0,
       "codex_minutes": 166.02,
+      "overlap_minutes": 0.0,
       "total_minutes": 166.02
     },
     {
       "date": "2026-05-22",
       "claude_minutes": 0.0,
       "codex_minutes": 160.83,
+      "overlap_minutes": 0.0,
       "total_minutes": 160.83
     },
     {
       "date": "2026-05-23",
       "claude_minutes": 0.0,
       "codex_minutes": 46.96,
+      "overlap_minutes": 0.0,
       "total_minutes": 46.96
     },
     {
       "date": "2026-05-25",
       "claude_minutes": 0.0,
-      "codex_minutes": 118.22,
-      "total_minutes": 118.22
+      "codex_minutes": 98.15,
+      "overlap_minutes": 0.0,
+      "total_minutes": 98.15
+    },
+    {
+      "date": "2026-05-26",
+      "claude_minutes": 0.0,
+      "codex_minutes": 20.06,
+      "overlap_minutes": 0.0,
+      "total_minutes": 20.06
     },
     {
       "date": "2026-06-01",
       "claude_minutes": 0.0,
       "codex_minutes": 2.98,
+      "overlap_minutes": 0.0,
       "total_minutes": 2.98
     },
     {
       "date": "2026-06-03",
       "claude_minutes": 0.0,
       "codex_minutes": 108.15,
+      "overlap_minutes": 0.0,
       "total_minutes": 108.15
     },
     {
       "date": "2026-06-04",
       "claude_minutes": 0.0,
       "codex_minutes": 240.93,
+      "overlap_minutes": 0.0,
       "total_minutes": 240.93
     },
     {
       "date": "2026-06-11",
       "claude_minutes": 0.0,
       "codex_minutes": 378.71,
+      "overlap_minutes": 0.0,
       "total_minutes": 378.71
     },
     {
       "date": "2026-06-12",
       "claude_minutes": 0.0,
       "codex_minutes": 159.89,
+      "overlap_minutes": 0.0,
       "total_minutes": 159.89
     },
     {
       "date": "2026-06-16",
       "claude_minutes": 0.0,
-      "codex_minutes": 99.82,
-      "total_minutes": 99.82
+      "codex_minutes": 68.63,
+      "overlap_minutes": 0.0,
+      "total_minutes": 68.63
     },
     {
       "date": "2026-06-17",
       "claude_minutes": 0.0,
-      "codex_minutes": 128.03,
-      "total_minutes": 128.03
+      "codex_minutes": 159.22,
+      "overlap_minutes": 0.0,
+      "total_minutes": 159.22
     },
     {
       "date": "2026-06-18",
       "claude_minutes": 0.0,
       "codex_minutes": 210.37,
+      "overlap_minutes": 0.0,
       "total_minutes": 210.37
-    },
-    {
-      "date": "2026-06-21",
-      "claude_minutes": 0.0,
-      "codex_minutes": 106.43,
-      "total_minutes": 106.43
     },
     {
       "date": "2026-06-22",
       "claude_minutes": 0.0,
-      "codex_minutes": 479.33,
-      "total_minutes": 479.33
+      "codex_minutes": 406.06,
+      "overlap_minutes": 0.0,
+      "total_minutes": 406.06
     },
     {
       "date": "2026-06-23",
       "claude_minutes": 0.0,
-      "codex_minutes": 154.75,
-      "total_minutes": 154.75
+      "codex_minutes": 334.46,
+      "overlap_minutes": 0.0,
+      "total_minutes": 334.46
     },
     {
       "date": "2026-06-24",
       "claude_minutes": 0.0,
       "codex_minutes": 116.53,
+      "overlap_minutes": 0.0,
       "total_minutes": 116.53
     },
     {
       "date": "2026-06-25",
       "claude_minutes": 0.0,
-      "codex_minutes": 247.67,
-      "total_minutes": 247.67
+      "codex_minutes": 215.07,
+      "overlap_minutes": 0.0,
+      "total_minutes": 215.07
+    },
+    {
+      "date": "2026-06-26",
+      "claude_minutes": 0.0,
+      "codex_minutes": 32.6,
+      "overlap_minutes": 0.0,
+      "total_minutes": 32.6
     },
     {
       "date": "2026-06-29",
       "claude_minutes": 0.0,
-      "codex_minutes": 255.81,
-      "total_minutes": 255.81
+      "codex_minutes": 255.8,
+      "overlap_minutes": 0.0,
+      "total_minutes": 255.8
     },
     {
       "date": "2026-06-30",
       "claude_minutes": 0.0,
-      "codex_minutes": 247.83,
-      "total_minutes": 247.83
+      "codex_minutes": 247.84,
+      "overlap_minutes": 0.0,
+      "total_minutes": 247.84
     },
     {
       "date": "2026-07-01",
       "claude_minutes": 0.0,
       "codex_minutes": 237.52,
+      "overlap_minutes": 0.0,
       "total_minutes": 237.52
-    },
-    {
-      "date": "2026-07-02",
-      "claude_minutes": 0.0,
-      "codex_minutes": 57.63,
-      "total_minutes": 57.63
     },
     {
       "date": "2026-07-03",
       "claude_minutes": 0.0,
-      "codex_minutes": 135.47,
-      "total_minutes": 135.47
+      "codex_minutes": 193.09,
+      "overlap_minutes": 0.0,
+      "total_minutes": 193.09
     },
     {
       "date": "2026-07-04",
-      "claude_minutes": 47.62,
-      "codex_minutes": 135.45,
-      "total_minutes": 183.07
+      "claude_minutes": 47.63,
+      "codex_minutes": 135.09,
+      "overlap_minutes": 5.98,
+      "total_minutes": 176.74
     },
     {
       "date": "2026-07-05",
       "claude_minutes": 1.26,
-      "codex_minutes": 18.0,
-      "total_minutes": 19.26
+      "codex_minutes": 18.36,
+      "overlap_minutes": 0.0,
+      "total_minutes": 19.62
     },
     {
       "date": "2026-07-07",
-      "claude_minutes": 26.23,
-      "codex_minutes": 95.2,
-      "total_minutes": 121.43
+      "claude_minutes": 24.23,
+      "codex_minutes": 65.18,
+      "overlap_minutes": 23.57,
+      "total_minutes": 65.84
+    },
+    {
+      "date": "2026-07-08",
+      "claude_minutes": 2.0,
+      "codex_minutes": 30.03,
+      "overlap_minutes": 0.0,
+      "total_minutes": 32.03
     },
     {
       "date": "2026-07-11",
-      "claude_minutes": 126.44,
-      "codex_minutes": 582.81,
-      "total_minutes": 709.25
+      "claude_minutes": 54.1,
+      "codex_minutes": 430.14,
+      "overlap_minutes": 19.92,
+      "total_minutes": 464.31
     },
     {
       "date": "2026-07-12",
-      "claude_minutes": 136.78,
-      "codex_minutes": 124.5,
-      "total_minutes": 261.28
+      "claude_minutes": 189.39,
+      "codex_minutes": 277.16,
+      "overlap_minutes": 133.01,
+      "total_minutes": 333.54
     },
     {
       "date": "2026-07-13",
-      "claude_minutes": 176.98,
-      "codex_minutes": 134.06,
-      "total_minutes": 311.04
+      "claude_minutes": 81.71,
+      "codex_minutes": 117.77,
+      "overlap_minutes": 21.72,
+      "total_minutes": 177.77
     },
     {
       "date": "2026-07-14",
-      "claude_minutes": 140.69,
-      "codex_minutes": 52.93,
-      "total_minutes": 193.62
+      "claude_minutes": 255.68,
+      "codex_minutes": 69.22,
+      "overlap_minutes": 43.72,
+      "total_minutes": 281.18
     },
     {
       "date": "2026-07-15",
-      "claude_minutes": 107.84,
-      "codex_minutes": 169.7,
-      "total_minutes": 277.54
+      "claude_minutes": 107.85,
+      "codex_minutes": 169.71,
+      "overlap_minutes": 5.71,
+      "total_minutes": 271.84
     },
     {
       "date": "2026-07-16",
       "claude_minutes": 18.65,
       "codex_minutes": 115.25,
+      "overlap_minutes": 0.0,
       "total_minutes": 133.9
     },
     {
       "date": "2026-07-17",
-      "claude_minutes": 56.11,
-      "codex_minutes": 268.52,
-      "total_minutes": 324.63
+      "claude_minutes": 35.64,
+      "codex_minutes": 115.92,
+      "overlap_minutes": 17.15,
+      "total_minutes": 134.41
     },
     {
       "date": "2026-07-18",
-      "claude_minutes": 15.39,
-      "codex_minutes": 53.03,
-      "total_minutes": 68.42
+      "claude_minutes": 35.85,
+      "codex_minutes": 205.63,
+      "overlap_minutes": 4.15,
+      "total_minutes": 237.33
     },
     {
       "date": "2026-07-20",
       "claude_minutes": 0.0,
       "codex_minutes": 1.07,
+      "overlap_minutes": 0.0,
       "total_minutes": 1.07
     },
     {
       "date": "2026-07-21",
       "claude_minutes": 33.09,
-      "codex_minutes": 148.69,
-      "total_minutes": 181.78
+      "codex_minutes": 148.68,
+      "overlap_minutes": 0.0,
+      "total_minutes": 181.77
     },
     {
       "date": "2026-07-22",
       "claude_minutes": 0.62,
       "codex_minutes": 0.0,
+      "overlap_minutes": 0.0,
       "total_minutes": 0.62
     },
     {
       "date": "2026-07-23",
       "claude_minutes": 18.03,
       "codex_minutes": 48.09,
+      "overlap_minutes": 0.0,
       "total_minutes": 66.12
     },
     {
       "date": "2026-07-24",
-      "claude_minutes": 37.06,
-      "codex_minutes": 185.03,
-      "total_minutes": 222.09
+      "claude_minutes": 37.05,
+      "codex_minutes": 155.38,
+      "overlap_minutes": 0.0,
+      "total_minutes": 192.43
+    },
+    {
+      "date": "2026-07-25",
+      "claude_minutes": 0.0,
+      "codex_minutes": 29.65,
+      "overlap_minutes": 0.0,
+      "total_minutes": 29.65
     },
     {
       "date": "2026-07-26",
       "claude_minutes": 3.69,
       "codex_minutes": 146.82,
-      "total_minutes": 150.51
+      "overlap_minutes": 3.69,
+      "total_minutes": 146.82
     },
     {
       "date": "2026-07-27",
       "claude_minutes": 414.79,
       "codex_minutes": 130.35,
-      "total_minutes": 545.14
+      "overlap_minutes": 11.74,
+      "total_minutes": 533.39
     },
     {
       "date": "2026-07-28",
-      "claude_minutes": 108.26,
+      "claude_minutes": 108.27,
       "codex_minutes": 75.69,
-      "total_minutes": 183.95
+      "overlap_minutes": 0.0,
+      "total_minutes": 183.96
     },
     {
       "date": "2026-07-29",
-      "claude_minutes": 214.33,
-      "codex_minutes": 209.21,
-      "total_minutes": 423.54
+      "claude_minutes": 214.34,
+      "codex_minutes": 209.22,
+      "overlap_minutes": 35.48,
+      "total_minutes": 388.08
     },
     {
       "date": "2026-07-30",
-      "claude_minutes": 100.02,
+      "claude_minutes": 94.89,
       "codex_minutes": 106.27,
-      "total_minutes": 206.29
+      "overlap_minutes": 16.2,
+      "total_minutes": 184.95
     },
     {
       "date": "2026-07-31",
-      "claude_minutes": 24.93,
-      "codex_minutes": 70.88,
-      "total_minutes": 95.81
+      "claude_minutes": 30.05,
+      "codex_minutes": 70.89,
+      "overlap_minutes": 2.69,
+      "total_minutes": 98.25
     },
     {
       "date": "2026-08-02",
-      "claude_minutes": 64.16,
+      "claude_minutes": 39.07,
       "codex_minutes": 263.79,
-      "total_minutes": 327.95
+      "overlap_minutes": 30.04,
+      "total_minutes": 272.82
     },
     {
       "date": "2026-08-03",
-      "claude_minutes": 96.68,
-      "codex_minutes": 140.38,
-      "total_minutes": 237.06
+      "claude_minutes": 121.78,
+      "codex_minutes": 140.39,
+      "overlap_minutes": 23.21,
+      "total_minutes": 238.96
     },
     {
       "date": "2026-08-04",
-      "claude_minutes": 235.07,
+      "claude_minutes": 235.06,
       "codex_minutes": 166.54,
-      "total_minutes": 401.61
+      "overlap_minutes": 133.57,
+      "total_minutes": 268.03
     },
     {
       "date": "2026-08-05",
-      "claude_minutes": 11.32,
+      "claude_minutes": 18.21,
       "codex_minutes": 0.0,
-      "total_minutes": 11.32
+      "overlap_minutes": 0.0,
+      "total_minutes": 18.21
     }
   ],
-  "skipped_lines": 1759,
+  "skipped_lines": 1769,
   "ai_outputs": [
     {
       "date": "2026-08-04",
