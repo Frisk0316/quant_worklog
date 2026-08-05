@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-05",
+  "run_id": "worklog_portfolio_20260805T102507",
+  "strategies": [],
+  "metrics": {
+    "available": false,
+    "reason": "metrics.json not found"
+  },
+  "equity": {
+    "available": false,
+    "reason": "equity_curve.csv not found"
+  },
+  "generated_at": "2026-08-05T02:28:49.317657+00:00"
+}
