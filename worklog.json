@@ -1,7 +1,26 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-05T08:45:25.740539+00:00",
+  "generated_at": "2026-08-06T08:48:04.098319+00:00",
   "daily_activity": [
+    {
+      "date": "2026-08-06",
+      "items": [
+        "[效能] compress market_klines and external_observations, 78 GB to 33 GB",
+        "[文件] close the recurring external-ingest question with a rule, not a scheduler",
+        "data+docs(okx): reverify the 2020+ canonical window and close the review",
+        "[文件] index the docs/ai operating protocols in docs/README.md",
+        "[文件] mirror the OKX-promotion authorization into state docs",
+        "process+plan: institutionalize the three in-the-moment error defenses; authorize OKX 2020+ promotion",
+        "[修正] green the doc metadata and feature-map link checks",
+        "[文件] 2026-08-06 session-end handoff and snapshot refresh",
+        "[文件] B1 literature search closes both admission candidates",
+        "[文件] record the 2026-08-06 user rulings on the admission packets",
+        "[文件] data inventory and the first two candidate admission packets",
+        "[文件] close the stale Deribit option-flow source-revision decision",
+        "[維護] weekly TimescaleDB backup, and runbook the DSN requirement",
+        "[修正] source DATABASE_URL in DB-writing scheduled wrappers"
+      ]
+    },
     {
       "date": "2026-08-05",
       "items": [
@@ -2495,6 +2514,34 @@
       "end": "2026-08-05T06:57:03.240000Z",
       "duration_minutes": 91.47,
       "event_count": 318
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-06T00:38:03.120000Z",
+      "end": "2026-08-06T03:59:42.592000Z",
+      "duration_minutes": 201.66,
+      "event_count": 976
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-06T03:04:29.371000Z",
+      "end": "2026-08-06T03:43:59.620000Z",
+      "duration_minutes": 39.5,
+      "event_count": 911
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-06T04:47:29.542000Z",
+      "end": "2026-08-06T05:36:22.833000Z",
+      "duration_minutes": 48.89,
+      "event_count": 86
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-06T06:11:49.214000Z",
+      "end": "2026-08-06T07:07:56.377000Z",
+      "duration_minutes": 56.12,
+      "event_count": 471
     }
   ],
   "daily": [
@@ -2917,10 +2964,52 @@
       "codex_minutes": 39.02,
       "overlap_minutes": 19.42,
       "total_minutes": 232.61
+    },
+    {
+      "date": "2026-08-06",
+      "claude_minutes": 306.67,
+      "codex_minutes": 39.5,
+      "overlap_minutes": 39.5,
+      "total_minutes": 306.67
     }
   ],
-  "skipped_lines": 1858,
+  "skipped_lines": 2028,
   "ai_outputs": [
+    {
+      "date": "2026-08-06",
+      "title": "Session Handoff: ops repair, DB backup, inventory, candidate closure — 2026-08-06",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Session Handoff: TimescaleDB compression + full backup — 2026-08-06",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Session Handoff: OKX 2020+ canonical promotion — 2026-08-06",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Data inventory — what is in the DB and what no hypothesis has used",
+      "type": "other"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Context Handoff: OKX 2020+ canonical promotion — 2026-08-06",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Codex task: extend the OKX source-aware canonical 1m window back to 2020",
+      "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Candidate admission packets — VIX term structure and COT positioning",
+      "type": "other"
+    },
     {
       "date": "2026-08-05",
       "title": "資金費率多空:換倉持倉 log(供工作紀錄頁)— 交付 Codex(2026-08-05)",
