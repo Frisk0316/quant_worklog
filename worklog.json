@@ -1,7 +1,21 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-06T08:48:04.098319+00:00",
+  "generated_at": "2026-08-07T08:46:27.121749+00:00",
   "daily_activity": [
+    {
+      "date": "2026-08-07",
+      "items": [
+        "mint, register / per user ruling",
+        "[功能] phase 3 - Stage-2 probe adapters as round runners",
+        "[文件] CURRENT_STATE at exactly the 90-line cap",
+        "[文件] trim CURRENT_STATE back under the 90-line cap",
+        "S-001/S-002 admission packets - one admissible, one caught",
+        "plan+research: dual-track phase 3 task and literature-sweep shortlist",
+        "[文件] 2026-08-07 snapshot - outage, backup ruling, slice-2 review",
+        "[功能] slice 2 - validator and one-command round path",
+        "re-exclude market_klines via both chunk prefixes"
+      ]
+    },
     {
       "date": "2026-08-06",
       "items": [
@@ -2542,6 +2556,48 @@
       "end": "2026-08-06T07:07:56.377000Z",
       "duration_minutes": 56.12,
       "event_count": 471
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-07T00:38:18.993000Z",
+      "end": "2026-08-07T00:38:19.208000Z",
+      "duration_minutes": 0.0,
+      "event_count": 3
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-07T01:31:41.303000Z",
+      "end": "2026-08-07T03:00:50.838000Z",
+      "duration_minutes": 89.16,
+      "event_count": 426
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-07T02:27:17.749000Z",
+      "end": "2026-08-07T02:51:27.732000Z",
+      "duration_minutes": 24.17,
+      "event_count": 305
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-07T03:54:13.056000Z",
+      "end": "2026-08-07T04:11:35.768000Z",
+      "duration_minutes": 17.38,
+      "event_count": 416
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-07T04:46:02.485000Z",
+      "end": "2026-08-07T05:09:21.213000Z",
+      "duration_minutes": 23.31,
+      "event_count": 350
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-07T04:46:05.560000Z",
+      "end": "2026-08-07T05:31:34.382000Z",
+      "duration_minutes": 45.48,
+      "event_count": 253
     }
   ],
   "daily": [
@@ -2971,10 +3027,72 @@
       "codex_minutes": 39.5,
       "overlap_minutes": 39.5,
       "total_minutes": 306.67
+    },
+    {
+      "date": "2026-08-07",
+      "claude_minutes": 152.02,
+      "codex_minutes": 47.48,
+      "overlap_minutes": 47.43,
+      "total_minutes": 152.07
     }
   ],
-  "skipped_lines": 2028,
+  "skipped_lines": 2076,
   "ai_outputs": [
+    {
+      "date": "2026-08-07",
+      "title": "phase 3 — round runners from the Stage-2 registry (Codex)",
+      "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "complete-round infrastructure — slice 2: validator + real-path wiring (Codex)",
+      "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Stage-2 first cell — build runner and execute (Codex)",
+      "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Session Handoff: slice 2 validator — 2026-08-07",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Session Handoff: phase 3 round runners — 2026-08-07",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Context Handoff: slice 2 validator — 2026-08-07",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Context Handoff: phase 3 round runners — 2026-08-07",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Claude review — slice 2 (validator + one-command round path)",
+      "type": "other"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Claude review — phase 3 (round runners)",
+      "type": "other"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Candidate admission packets — S-001 multi-week reversal, S-002 jump-variance XS",
+      "type": "other"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "2026-08-07 literature sweep — candidate shortlist (track 2 of 雙軌並進)",
+      "type": "other"
+    },
     {
       "date": "2026-08-06",
       "title": "Session Handoff: ops repair, DB backup, inventory, candidate closure — 2026-08-06",
