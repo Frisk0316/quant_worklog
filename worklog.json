@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-07T08:46:27.121749+00:00",
+  "generated_at": "2026-08-10T08:46:45.021968+00:00",
   "daily_activity": [
     {
       "date": "2026-08-07",
@@ -2598,6 +2598,13 @@
       "end": "2026-08-07T05:31:34.382000Z",
       "duration_minutes": 45.48,
       "event_count": 253
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-10T02:53:25.598000Z",
+      "end": "2026-08-10T03:32:58.314000Z",
+      "duration_minutes": 39.55,
+      "event_count": 724
     }
   ],
   "daily": [
@@ -3034,10 +3041,27 @@
       "codex_minutes": 47.48,
       "overlap_minutes": 47.43,
       "total_minutes": 152.07
+    },
+    {
+      "date": "2026-08-10",
+      "claude_minutes": 0.0,
+      "codex_minutes": 39.55,
+      "overlap_minutes": 0.0,
+      "total_minutes": 39.55
     }
   ],
-  "skipped_lines": 2076,
+  "skipped_lines": 2077,
   "ai_outputs": [
+    {
+      "date": "2026-08-10",
+      "title": "Session Handoff: / frozen Stage-2 execution — 2026-08-10",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-10",
+      "title": "Context Handoff: / Stage-2 probe — 2026-08-10",
+      "type": "handoff"
+    },
     {
       "date": "2026-08-07",
       "title": "phase 3 — round runners from the Stage-2 registry (Codex)",
