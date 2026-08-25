@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-24T08:46:14.982014+00:00",
+  "generated_at": "2026-08-25T08:46:58.579340+00:00",
   "daily_activity": [
     {
       "date": "2026-08-07",
@@ -2612,6 +2612,48 @@
       "end": "2026-08-11T15:54:00.387000Z",
       "duration_minutes": 37.18,
       "event_count": 750
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-24T09:13:22.412000Z",
+      "end": "2026-08-24T09:25:40.404000Z",
+      "duration_minutes": 12.3,
+      "event_count": 288
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-25T01:31:56.042000Z",
+      "end": "2026-08-25T01:40:36.769000Z",
+      "duration_minutes": 8.68,
+      "event_count": 34
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-25T02:32:39.165000Z",
+      "end": "2026-08-25T04:11:22.171000Z",
+      "duration_minutes": 98.72,
+      "event_count": 1314
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-25T04:40:41.942000Z",
+      "end": "2026-08-25T04:45:57.555000Z",
+      "duration_minutes": 5.26,
+      "event_count": 86
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-25T06:13:37.840000Z",
+      "end": "2026-08-25T06:35:17.655000Z",
+      "duration_minutes": 21.66,
+      "event_count": 176
+    },
+    {
+      "tool": "codex",
+      "start": "2026-08-25T07:21:50.199000Z",
+      "end": "2026-08-25T07:24:07.635000Z",
+      "duration_minutes": 2.29,
+      "event_count": 38
     }
   ],
   "daily": [
@@ -3062,10 +3104,39 @@
       "codex_minutes": 37.18,
       "overlap_minutes": 0.0,
       "total_minutes": 37.18
+    },
+    {
+      "date": "2026-08-24",
+      "claude_minutes": 12.3,
+      "codex_minutes": 0.0,
+      "overlap_minutes": 0.0,
+      "total_minutes": 12.3
+    },
+    {
+      "date": "2026-08-25",
+      "claude_minutes": 13.94,
+      "codex_minutes": 122.67,
+      "overlap_minutes": 0.0,
+      "total_minutes": 136.61
     }
   ],
-  "skipped_lines": 2079,
+  "skipped_lines": 2118,
   "ai_outputs": [
+    {
+      "date": "2026-08-25",
+      "title": "Session Handoff: external volatility and index data — 2026-08-25",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Context Handoff: external volatility and index data — 2026-08-25",
+      "type": "handoff"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Codex tasks: external volatility datasets (user-approved 2026-08-25)",
+      "type": "codex-tasks"
+    },
     {
       "date": "2026-08-11",
       "title": "Session Handoff: July-to-current strategy project summary — 2026-08-11",
