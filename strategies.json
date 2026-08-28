@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T08:45:02.705609+00:00",
+  "generated_at": "2026-08-28T08:45:02.278842+00:00",
   "strategies": [
     {
       "id": "vol_premium",
@@ -1623,13 +1623,13 @@
       ],
       "shadow": {
         "available": true,
-        "total_records": 24,
+        "total_records": 26,
         "status_counts": {
-          "not_rich": 24
+          "not_rich": 26
         },
-        "distinct_days": 11,
-        "last_event_date": "2026-08-27",
-        "journal_weeks": 6.428571428571429,
+        "distinct_days": 12,
+        "last_event_date": "2026-08-28",
+        "journal_weeks": 6.571428571428571,
         "minimum_weeks": 8,
         "eight_week_journal_met": false
       }
