@@ -1,7 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-08-30T08:46:22.778140+00:00",
+  "generated_at": "2026-09-01T08:46:27.511989+00:00",
   "daily_activity": [
+    {
+      "date": "2026-08-30",
+      "items": [
+        "[文件] weekly log 2026-08-24..2026-08-30 in plain language"
+      ]
+    },
     {
       "date": "2026-08-07",
       "items": [
@@ -2654,6 +2660,13 @@
       "end": "2026-08-25T07:24:07.635000Z",
       "duration_minutes": 2.29,
       "event_count": 38
+    },
+    {
+      "tool": "claude",
+      "start": "2026-08-30T13:07:04.986000Z",
+      "end": "2026-08-30T13:09:57.131000Z",
+      "duration_minutes": 2.87,
+      "event_count": 64
     }
   ],
   "daily": [
@@ -3118,9 +3131,16 @@
       "codex_minutes": 122.67,
       "overlap_minutes": 0.0,
       "total_minutes": 136.61
+    },
+    {
+      "date": "2026-08-30",
+      "claude_minutes": 2.87,
+      "codex_minutes": 0.0,
+      "overlap_minutes": 0.0,
+      "total_minutes": 2.87
     }
   ],
-  "skipped_lines": 2119,
+  "skipped_lines": 2125,
   "ai_outputs": [
     {
       "date": "2026-08-25",
@@ -3136,6 +3156,11 @@
       "date": "2026-08-25",
       "title": "Codex tasks: external volatility datasets (user-approved 2026-08-25)",
       "type": "codex-tasks"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "工作週誌 2026-08-24(一)〜 2026-08-30(日)",
+      "type": "worklog"
     },
     {
       "date": "2026-08-11",
